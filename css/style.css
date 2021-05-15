@@ -170,7 +170,7 @@ button.btnClose{
     border: solid blue 5px;
     }
 .positionDiv {
-     position: absolute; 
+    position: absolute; 
     top:25%;
     bottom: 25%;
     left:25%;
@@ -194,7 +194,9 @@ button.btnClose{
     height: 100%;
     z-index: 3;
     top: 30%;
-    left: 35%;
+    left: 40%; 
+   
+    
 }
 
 .barraFooter{
