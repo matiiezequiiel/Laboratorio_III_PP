@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/books-stack-of-three.svg">
+    <script src="./js/index.js"></script>
+
+    <title>Primer Parcial Labo 3</title>
+</head>
+
+<header>
+    <div class="barra">
+        <img src="./img/school.png" alt="imagenHeader" >
+        <div>PARCIAL-LABO-III AGUIRRE MATIAS</div>
+        <img src="./img/school.png" alt="imagenHeader" >
+    </div>
+</header>
+
+<body>
+    <div id="bodyDiv" class="bodyDivClass" hidden>
+        <img src="img/Spinner-1.6s-254px.gif" alt="imagenSpinner" class="imageClass">
+    </div>
+    
+    <dataBody id="dataBody" class="container positionDiv" style="background-color:lightgray;" hidden>
+
+        <button type="button" id="btnClose" class="btnClose">X</button>
+
+        <div class="form">
+            <br>
+            <label class="dataFormulario">NOMBRE</label>
+            <input type="hidden" id="hiddenID" width="40px" />
+            <br>
+            <input type="text" id="txtName" width="40px" placeholder="Su nombre aquí..." />
+            <br><br>
+            <label>CUATRIMESTRE</label>
+            <br>
+            <select name="cuatrimestre" id='impCuatrimestre'>
+                <option value="0">1</option><option value="1">2</option><option value="2">3</option><option value="3">4</option>
+            </select>
+            <br><br>
+            <label>TURNO</label>
+            <br>
+            <input type="radio" id="impTM" name="turno" width="40px" /> Mañana
+            <input type="radio" id="impTN" name="turno" width="40px" checked /> Noche
+            <br><br>
+            <label>FECHA DE FINAL</label>
+            <br>
+            <input type="date" id="impDate" width="40px" />
+            <br> <br>   
+            <button type="button" class="btnSave" id="btnSave">MODIFICAR</button>
+            <button type="button" class="btnDelete" id="btnDelete">ELIMINAR</button>
+
+        </div>
+    </dataBody>
+    <br>
+    <table id="table">
+        <thead class="table">
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>CUATRIMESTRE</th>
+            <th>FECHA DE FINAL</th>
+            <th>TURNO</th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <footer>
+        <div class="barraFooter">
+            <p>Todos los derechos reservados &copy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
